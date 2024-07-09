@@ -1,7 +1,7 @@
 function mincost(arr) {
     // Initialize a priority queue (min-heap) with the given array
     const priorityQueue = new MinHeap(arr);
-
+priorityQueue.sort((a, b) => a - b);
     // Initialize the total cost
     let totalCost = 0;
 
